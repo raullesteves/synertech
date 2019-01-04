@@ -1,0 +1,34 @@
+---
+title: Synertech
+timezone: America/Sao_Paulo
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+description: Estamos cuidando de tudo para que o lançamento seja um sucesso.
+baseurl: ""
+url: http://synertech.com.br
+markdown: kramdown
+permalink: pretty/
+sass:
+  style: compressed
+exclude:
+- node_modules
+- desktop.ini
+- gulpfile.js
+- npm-debug.log
+- package.json

@@ -1,0 +1,23 @@
+---
+layout: default
+sections:
+  sobre:
+    title: Sobre Nós
+  institucional:
+    title: Institucional
+  o-que-fazemos:
+    title: O que fazemos
+---
+
+{% for s in page.sections %}
+
+  {% assign id = s[0] %}
+  {% assign section = s[1] %}
+
+  <section class="section-{{ id }}" id="{{ id }}">
+
+    {% include sections/{{ id }}.html %}
+
+  </section>
+
+{% endfor %}

@@ -1,0 +1,47 @@
+%section-spacing
+    padding-top: $spacing-unit * 2
+    padding-bottom: $spacing-unit * 2
+
+.section-
+
+    &construcao        
+        color: $compl-color     
+        +media-greater($on-laptop)
+            padding: 60px 0px           
+            height: calc(100vh - 120px)
+
+        h5
+            font-family: $thin-font-family
+
+        .desktop
+            display: none
+            +media-greater($on-laptop)
+                display: block
+
+        .mobile
+            display: none
+            +media-query($on-laptop)
+                display: block
+
+        .infos-contato
+            +media-query($on-laptop)
+                text-align: center
+
+        h4.mobile
+            padding: $spacing-unit/2 0px
+
+        section.page-content
+            +media-query($on-palm)
+                padding: 0 0
+    
+    &sobre
+        @extend %section-spacing
+        height: calc(100vh - 56px)
+
+    &institucional
+        @extend %section-spacing
+        height: calc(100vh - 56px)
+
+    &o-que-fazemos
+        @extend %section-spacing
+        height: calc(100vh - 56px)
