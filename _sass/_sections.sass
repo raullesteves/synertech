@@ -2,6 +2,29 @@
     padding-top: $spacing-unit * 2
     padding-bottom: $spacing-unit * 2
 
+%background-img
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+.content
+    height: 100vh
+    overflow-x: hidden
+    overflow-y: auto
+    perspective: 2px
+
+.parallax
+    &:after
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        transform: translateZ(-1px) scale(1.5)
+        background-size: 100%
+        z-index: -1
+
 .section-
 
     &construcao        
@@ -36,12 +59,19 @@
     
     &sobre
         @extend %section-spacing
-        height: calc(100vh - 56px)
+        height: 100vh
+        position: relative
+        &:after
+            background-image: url(../img/ilustrativas/sobre.jpg)
+        
 
     &institucional
         @extend %section-spacing
+        @extend %background-img
         height: calc(100vh - 56px)
+        background-image: url(../img/ilustrativas/institucional.jpg)
 
     &o-que-fazemos
         @extend %section-spacing
+        @extend %background-img
         height: calc(100vh - 56px)
