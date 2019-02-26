@@ -108,11 +108,6 @@ function configSlider(slider, parent) {
   });
 }
 
-window.modalFilme = function modalFilme(modal) {
-  // if (screen().width < 600) return;
-  return modal(modal);
-};
-
 window.modal = function modal(modal) {
   if (typeof modal === 'string') modal = document.querySelector(modal);
   return {
@@ -121,22 +116,3 @@ window.modal = function modal(modal) {
   };
 };
 
-window.modalFilme = function modalFilme(modal) {
-  if (typeof modal === 'string') modal = document.querySelector(modal);
-  const modalComponent = window.modal(modal);
-  if (screen().width < 800) {
-    const btn = modal.querySelector('[data-btn="link-filme-interna"]');
-    if (btn) {
-      modalComponent.abrir = function() {location.assign(btn.href)};
-    }
-  }
-  return modalComponent;
-};
-
-window.backgroundMobile = function backgroundMobile() {
-  document.querySelector('.content-relative').classList.add('overlay');
-}
-
-window.removeBackground = function removeBackground() {
-  document.querySelector('.content-relative').classList.remove('overlay');
-}
