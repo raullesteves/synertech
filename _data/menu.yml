@@ -2,11 +2,11 @@
   url: home
 - title: sobre
   url: sobre
-- title: institucional
-  url: institucional
-- title: o que fazemos
-  url: o-que-fazemos
-- title: conteúdo
-  url: conteudo
+- title: serviços
+  url: servicos
+- title: equipe
+  url: equipe
+- title: notícias
+  url: noticias
 - title: contato
   url: contato

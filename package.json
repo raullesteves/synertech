@@ -1,5 +1,5 @@
 {
-  "name": "johnyplate",
+  "name": "synertech",
   "version": "1.0.0",
   "description": "My preety awesome Jekyll-Babel-Boilerplate ;)",
   "main": "gulpfile.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Johnylab/johnyplate.git"
+    "url": "git+https://github.com/raullesteves/synertech"
   },
   "keywords": [
     "jekyll",
@@ -16,12 +16,12 @@
     "babel",
     "bootstrap"
   ],
-  "author": "Johnylab",
+  "author": "Synertech",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Johnylab/johnyplate/issues"
+    "url": "https://github.com/raullesteves/synertech/issues"
   },
-  "homepage": "http://johnylab.net/johnyplate",
+  "homepage": "http://synertech.com",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",

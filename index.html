@@ -1,12 +1,13 @@
 ---
 layout: default
 sections:
+  home:
   sobre:
     title: Sobre Nós
-  institucional:
-    title: Institucional
-  o-que-fazemos:
-    title: O que fazemos
+  servicos:
+    title: Serviços
+  equipe:
+    title: equipe
 ---
 
   {% for s in page.sections %}
@@ -14,7 +15,7 @@ sections:
     {% assign id = s[0] %}
     {% assign section = s[1] %}
 
-    <section class="section-{{ id }} parallax" id="{{ id }}">
+    <section class="section-{{ id }}" id="{{ id }}">
 
       {% include sections/{{ id }}.html %}
 
