@@ -17,9 +17,35 @@
       height
     }
   }
+
+  function _toggle(show, hide) {
+    if (show) _show(show);
+    if (hide) _hide(hide);
+  }
+  
+  function _show(what, callback) {
+    if (typeof what === 'string') what = document.querySelectorAll(what);
+    if (what instanceof Array) return what.forEach(w => _show(w, callback));
+    if (what instanceof NodeList) return Array.prototype.forEach.call(what, w => _show(w, callback));
+    if (!(what instanceof Node)) return;
+    what.removeAttribute('hidden');
+    if (callback instanceof Function) callback(what);
+  }
+  
+  function _hide(what, callback) {
+    if (typeof what === 'string') what = document.querySelectorAll(what);
+    if (what instanceof Array) return what.forEach(w => _hide(w, callback));
+    if (what instanceof NodeList) return Array.prototype.forEach.call(what, w => _hide(w, callback));
+    if (!(what instanceof Node)) return;
+    what.setAttribute('hidden', true);
+    if (callback instanceof Function) callback(what);
+  }  
   
   export {
     _map,
-    screen
+    screen,
+    _toggle,
+    _show,
+    _hide
   };
   

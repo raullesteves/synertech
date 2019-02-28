@@ -1,9 +1,13 @@
 import Slider from './Slider';
 import Carousel from './Carousel';
 import masks from './masks';
+import hasParent from './hasParent';
 import {
   _map,
-  screen
+  screen,
+  _toggle,
+  _hide,
+  _show
 } from './helpers';
 
 const sliderOptions = {
@@ -26,8 +30,30 @@ function setup() {
   Array.prototype.forEach.call(pageLinks, link => link.addEventListener("click", function(){
       const section = document.querySelector(this.hash);
       if (!section) return false;
-      scrollToY(section.offsetTop - offsetHeader, 1000);
-  }));  
+      scrollToY(section.offsetTop, 1000);
+  }));
+
+  const menuBars = document.querySelector('.site-nav')  
+  const winH = window.innerHeight
+  const logoBig = document.querySelector('[data-logo-big]')
+  const logo = document.querySelector('[data-logo]')
+  window.onscroll = ()=>{
+    if(document.body.scrollTop > winH || document.documentElement.scrollTop > winH){
+      menuBars.removeAttribute('hidden')
+    }
+    else{
+      menuBars.setAttribute('hidden', true)
+    }
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+      _toggle(logo, logoBig)
+      _hide('.social-media')
+    }
+    else{
+      _toggle(logoBig, logo)
+      _show('.social-media')
+
+    }
+  }
 
   window.sliders = _map('.slider', parent => {
     const slider = new Slider({
@@ -45,6 +71,22 @@ function setup() {
     configSlider(carousel, parent);
     return carousel;
   });
+
+  const menuIcons = Array.prototype.slice.call(document.querySelectorAll('.menu-icon'));
+
+  menuIcons.forEach(btn => btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    this.classList.toggle('hover');
+  }));
+  
+  document.body.addEventListener('click', function (e) {
+    menuIcons.forEach(btn => {
+      const isTarget = el => e.target === el || hasParent(e.target, el);
+      const menuContainer = btn.parentElement.querySelector('.trigger');
+      if (isTarget(btn) || isTarget(menuContainer)) return;
+      btn.classList.remove('hover');
+    })
+  }, false);  
 
   _map('[data-mask]', campo => {
     const name = campo.getAttribute('data-mask');
