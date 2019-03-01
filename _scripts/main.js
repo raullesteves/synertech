@@ -30,7 +30,7 @@ function setup() {
   Array.prototype.forEach.call(pageLinks, link => link.addEventListener("click", function(){
       const section = document.querySelector(this.hash);
       if (!section) return false;
-      scrollToY(section.offsetTop, 1000);
+      scrollToY(section.offsetTop, 1000);      
   }));
 
   const menuBars = document.querySelector('.site-nav')  
@@ -54,6 +54,9 @@ function setup() {
 
     }
   }
+
+  const sectionTop = document.querySelector('.section-home');
+  scrollToY(sectionTop.offsetTop, 1000);      
 
   window.sliders = _map('.slider', parent => {
     const slider = new Slider({

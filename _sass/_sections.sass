@@ -7,9 +7,84 @@
     background-position: center
     background-repeat: no-repeat
 
+%next-section
+    .next-section
+        position: absolute
+        bottom: 0
+        font-size: $small-font-size
+        width: $spacing-unit*3
+        left: 50%
+        margin-left: -45px
+        z-index: 999
+        animation: btn 1.4s infinite
+        -webkit-animation: btn 1.4s infinite
+        -ms-animation: btn 1.4s infinite
+        -o-animation: btn 1.4s infinite
+        transition: bottom 0.4s ease-in-out
+
+        svg
+            width: $spacing-unit
+            height: $spacing-unit
+
+            path
+                fill: $text-color
+                @extend %transition
+        &:hover
+            color: $grey-color
+            text-decoration: none
+
+            path
+                fill: $grey-color
+
+%prev-section
+    .prev-section
+        position: absolute
+        top: 0
+        font-size: $small-font-size
+        width: $spacing-unit*3
+        left: 50%
+        margin-left: -45px
+        z-index: 999
+        animation: btn-prev 1.4s infinite
+        -webkit-animation: btn-prev 1.4s infinite
+        -ms-animation: btn-prev 1.4s infinite
+        -o-animation: btn-prev 1.4s infinite
+        transition: top 0.4s ease-in-out
+
+        svg
+            width: $spacing-unit
+            height: $spacing-unit
+            transform: rotate(180deg)
+
+            path
+                fill: $text-color
+                @extend %transition
+        &:hover
+            color: $grey-color
+            text-decoration: none
+
+            path
+                fill: $grey-color
+
+@keyframes btn
+    0%
+        bottom: 0
+    50%
+        bottom: $spacing-unit/2
+    100% 
+        bottom: 0    
+
+@keyframes btn-prev
+    0%
+        top: 0
+    50%
+        top: $spacing-unit/2
+    100% 
+        top: 0
+
 .section-
 
-    &construcao        
+    &construcao
         color: $compl-color     
         +media-greater($on-laptop)
             padding: 60px 0px           
@@ -62,41 +137,49 @@
                         color: $grey-color
                         text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff
                         text-decoration: none
-            .next-section
-                position: absolute
-                bottom: 0
-                font-size: $small-font-size
-                width: $spacing-unit*3
-                left: 50%
-                margin-left: -45px
 
-                svg
-                    width: $spacing-unit
-                    height: $spacing-unit
-
-                    path
-                        fill: $text-color
-                        @extend %transition
-                &:hover
-                    color: $grey-color
-                    text-decoration: none
-
-                    path
-                        fill: $grey-color
+            @extend %next-section
 
     &sobre
-        @extend %section-spacing
         height: 100vh
+        background-image: url('../img/layout/bg-sobre.png')
+        background-position: left top 155px
+        background-size: auto 40%
+        background-repeat: no-repeat
+        // padding-top: 56px
+        padding-bottom: $spacing-unit*2
         position: relative
-        
 
-    &institucional
-        @extend %section-spacing
-        @extend %background-img
-        height: calc(100vh - 56px)
-        background-image: url(../img/ilustrativas/institucional.jpg)
+        .wrapper
+            height: calc(100vh - 60px)
 
-    &o-que-fazemos
-        @extend %section-spacing
-        @extend %background-img
-        height: calc(100vh - 56px)
+            p
+                font-size: $big-font-size
+
+            .align-left-center
+                margin-left: $spacing-unit*3
+
+        @extend %next-section
+        @extend %prev-section
+
+    &servicos
+        height: 100vh
+        background-image: url('../img/layout/bg-servicos.png')
+        background-position: left top 155px
+        background-size: auto 40%
+        background-repeat: no-repeat
+        // padding-top: 56px
+        padding-bottom: $spacing-unit*2
+        position: relative
+
+        .wrapper
+            height: calc(100vh - 60px)
+
+            p
+                font-size: $big-font-size
+
+            .align-left-center
+                margin-left: $spacing-unit*3
+
+        @extend %next-section
+        @extend %prev-section

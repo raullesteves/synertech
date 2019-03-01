@@ -26,23 +26,24 @@
     &[hidden]
         display: none
 
-.site-nav 
-    float: right
-    // line-height: 56px
+.site-nav
     position: absolute
     top: 0
+    left: auto
     right: 0
-    // background-color: $background-color
-    border-radius: 5px
-    text-align: right
+    z-index: 999    
 
     &[hidden]
         display: none
 
+    &:hover
+        width: auto
+        height: auto
+
     .menu-icon
         display: block
         float: right
-        position: absolute
+        position: fixed
         right: 0
         z-index: 999
         margin-left: $spacing-unit/2
@@ -52,9 +53,11 @@
     .trigger 
         clear: both
         // display: none
-        position: relative
+        position: fixed
         height: 100vh
         top: 0
+        right: 0
+        z-index: 99
         transform: translateX(100%)
         background-color: $text-color
         transition: 0.3s ease-in-out

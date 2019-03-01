@@ -1,8 +1,9 @@
 .slider.set
     position: relative
+    z-index: 99
     overflow: hidden
     width: 100%
-    height: 100%
+    height: 100vh
     .slide
         position: absolute
         top: 0
@@ -17,7 +18,7 @@
         &.next,
         &.current
             display: block
-            z-index: 2
+            z-index: 99
 
         &.prev
             transform: translate(-100%)
