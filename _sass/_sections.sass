@@ -76,6 +76,13 @@
 
                     path
                         fill: $text-color
+                        @extend %transition
+                &:hover
+                    color: $grey-color
+                    text-decoration: none
+
+                    path
+                        fill: $grey-color
 
     &sobre
         @extend %section-spacing

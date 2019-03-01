@@ -38,7 +38,7 @@ function setup() {
   const logoBig = document.querySelector('[data-logo-big]')
   const logo = document.querySelector('[data-logo]')
   window.onscroll = ()=>{
-    if(document.body.scrollTop > winH || document.documentElement.scrollTop > winH){
+    if(document.body.scrollTop >= winH || document.documentElement.scrollTop >= winH){
       menuBars.removeAttribute('hidden')
     }
     else{
