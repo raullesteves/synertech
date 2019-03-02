@@ -17,3 +17,19 @@
         text-decoration: none
         box-shadow: 0 3px 8px 0 rgba(black, .5)
         transform: translateY(-1px)
+
+    +variant(link)
+        background: transparent
+
+    +variant(slider)
+        background: transparent
+        cursor: pointer
+        svg
+            width: $spacing-unit
+            height: $spacing-unit
+            path
+                fill: #000000
+
+        &:hover, &:focus, &:active
+            background-color: transparent
+            box-shadow: none

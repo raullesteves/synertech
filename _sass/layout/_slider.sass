@@ -137,24 +137,36 @@
     &:hover,
     &:focus
         svg
-            transform: scale(1.1)
-            opacity: 1
+            // transform: scale(1.1)
+            // opacity: 1
+            path
+                fill: $grey-color
 
     &:active
         svg
-            transform: scale(.95)
-            opacity: 1
+            // transform: scale(.95)
+            // opacity: 1
+        path
+            fill: $grey-color            
 
     svg
-        width: 1.7em
-        height: 1.7em
-        opacity: .8
+        width: $spacing-unit
+        height: $spacing-unit
+        // opacity: .8
 
     @include media-query($on-laptop)
         padding: 0px
 
 button[data-action="prev"]
     left: 10px
+    transform: rotate(90deg)    
+
+    &:hover
+        transform: rotate(90deg)
 
 button[data-action="next"]
     right: 10px    
+    transform: rotate(-90deg)
+
+    &:hover
+        transform: rotate(-90deg)
