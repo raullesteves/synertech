@@ -15,7 +15,7 @@ var browserSyncRoutes = {
      * Comment this if you don't use a site.baseurl in _config.yml
      * or change '/johnyplate' to your site.baseurl.
      */
-    '/johnyplate': '_site'
+    '/johnyplate': 'https://raullesteves.github.io/synertech/'
 }
 
 gulp.task('jekyll-build', function (done) {
