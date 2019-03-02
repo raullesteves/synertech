@@ -20,8 +20,8 @@ defaults:
   values:
     layout: post
 description: Estamos cuidando de tudo para que o lançamento seja um sucesso.
-baseurl: "synertech"
-url: https://raullesteves.github.io/
+baseurl: "/synertech"
+url: "https://raullesteves.github.io"
 markdown: kramdown
 permalink: pretty/
 sass:
