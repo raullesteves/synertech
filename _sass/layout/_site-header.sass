@@ -5,12 +5,23 @@
     width: 100%
     // background-color: $background-color
     padding: $spacing-unit/2 0px
+    +media-query($on-laptop)
+        [data-logo-big]
+            display: none
+
+        [data-logo]
+            display: block
+
+    +media-query($on-palm)
+        [data-logo]
+            max-width: 80%
 
 .site-title
     float: left
     line-height: 56px
     // img
     //     display: inline-block
+
 
 .social-media
     .icon-sm
@@ -22,9 +33,12 @@
                 @extend %transition
         &:hover
             path
-                fill: #000000              
+                fill: #000000
     &[hidden]
         display: none
+
+    +media-query($on-laptop)
+        display: none !important
 
 .site-nav
     position: absolute
@@ -49,6 +63,10 @@
         margin-left: $spacing-unit/2
         margin-top: $spacing-unit/2
         margin-right: $spacing-unit
+
+        +media-query($on-laptop)
+            margin-right: $spacing-unit/2
+            margin-top: 0
 
     .trigger 
         clear: both
@@ -90,3 +108,9 @@
         &:hover
             path
                 fill: $compl-color
+
+    +media-query($on-laptop)
+        display: block
+
+        &[hidden]
+            display: block
