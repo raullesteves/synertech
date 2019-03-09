@@ -13,14 +13,18 @@
         bottom: 0
         font-size: $small-font-size
         width: $spacing-unit*3
-        left: 50%
-        margin-left: -45px
+        right: 50%
+        margin-right: -45px
         z-index: 99
         animation: btn 1.4s infinite
         -webkit-animation: btn 1.4s infinite
         -ms-animation: btn 1.4s infinite
         -o-animation: btn 1.4s infinite
         transition: bottom 0.4s ease-in-out
+
+        +media-query($on-laptop)
+            right: 0
+            margin-right: 0
 
         svg
             width: $spacing-unit
@@ -50,6 +54,16 @@
         -ms-animation: btn-prev 1.4s infinite
         -o-animation: btn-prev 1.4s infinite
         transition: top 0.4s ease-in-out
+
+        +media-query($on-laptop)
+            left: 0
+            margin-left: 0
+            top: unset
+            bottom: 0
+            -webkit-animation: btn 1.4s infinite
+            -ms-animation: btn 1.4s infinite
+            -o-animation: btn 1.4s infinite
+            transition: bottom 0.4s ease-in-out            
 
         svg
             width: $spacing-unit
@@ -125,13 +139,13 @@
 
         +media-query($on-laptop)
             background-size: 60%
-            background-position: left top 80px
+            background-position: left top 60px
 
         .wrapper
             height: calc(100vh - 60px)
 
             +media-query($on-laptop)
-                padding-top: $spacing-unit*3
+                padding-top: $spacing-unit*4
 
             h1
                 margin: 0 0
@@ -182,18 +196,29 @@
         // padding-top: 56px
         padding-bottom: $spacing-unit*2
         position: relative
+        +media-query($on-laptop)
+            background-size: 60%
+            background-position: left top 60px     
+
+            h2
+                font-size: 1.62em
 
         .wrapper
             height: 100vh
+
+            +media-query($on-laptop)
+                padding-top: $spacing-unit*2
 
             &.padding-bottom
                 padding-bottom: $spacing-unit*2
 
             p
-                font-size: $big-font-size
-
+                +media-greater($on-laptop)
+                    font-size: $big-font-size
+            
             .align-left-center
-                margin-left: $spacing-unit*3
+                +media-greater($on-laptop)
+                    margin-left: $spacing-unit*3
 
         .slide
             &:not(:first-child)

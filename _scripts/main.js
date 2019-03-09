@@ -31,6 +31,9 @@ function setup() {
       const section = document.querySelector(this.hash);
       if (!section) return false;
       scrollToY(section.offsetTop, 1000);      
+      menuIcons.forEach(btn => {
+        btn.classList.remove('hover');
+      })      
   }));
 
   const menuBars = document.querySelector('.site-nav')  

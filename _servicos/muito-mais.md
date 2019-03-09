@@ -9,7 +9,7 @@ position-text: left
 
 A Synertech atende os mais diversos cenários. Qualquer outra necessidade, pode entrar em contato conosco para que possamos melhor atende-lo!
 
-<section data-grid="small-spacing center" class="page-content">
+<section data-grid="small-spacing center row" class="page-content">
     <div data-cel data-text="right" class="redes">
         {% include svg/whatsapp.svg %}
     </div>

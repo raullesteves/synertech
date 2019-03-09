@@ -21,6 +21,9 @@ body
   font-feature-settings: "kern" 1
   font-kerning: normal
   box-sizing: border-box
+  +media-query($on-laptop)
+    font: $base-font-weight #{$medium-font-size}/#{$base-line-height} $base-font-family
+
   *
     box-sizing: inherit
 
