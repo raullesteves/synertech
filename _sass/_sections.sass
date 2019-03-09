@@ -15,7 +15,7 @@
         width: $spacing-unit*3
         left: 50%
         margin-left: -45px
-        z-index: 999
+        z-index: 99
         animation: btn 1.4s infinite
         -webkit-animation: btn 1.4s infinite
         -ms-animation: btn 1.4s infinite
@@ -44,7 +44,7 @@
         width: $spacing-unit*3
         left: 50%
         margin-left: -45px
-        z-index: 999
+        z-index: 99999
         animation: btn-prev 1.4s infinite
         -webkit-animation: btn-prev 1.4s infinite
         -ms-animation: btn-prev 1.4s infinite
@@ -70,15 +70,15 @@
     0%
         bottom: 0
     50%
-        bottom: $spacing-unit/2
+        bottom: $spacing-unit/3
     100% 
-        bottom: 0    
+        bottom: 0
 
 @keyframes btn-prev
     0%
         top: 0
     50%
-        top: $spacing-unit/2
+        top: $spacing-unit/3
     100% 
         top: 0
 
@@ -123,8 +123,15 @@
         padding-bottom: $spacing-unit*2
         position: relative
 
+        +media-query($on-laptop)
+            background-size: 60%
+            background-position: left top 80px
+
         .wrapper
             height: calc(100vh - 60px)
+
+            +media-query($on-laptop)
+                padding-top: $spacing-unit*3
 
             h1
                 margin: 0 0
@@ -139,6 +146,10 @@
                         text-decoration: none
 
             @extend %next-section
+
+        .menu-home
+            +media-query($on-laptop)
+                display: none
 
     &sobre
         height: 100vh
@@ -173,13 +184,27 @@
         position: relative
 
         .wrapper
-            height: calc(100vh - 60px)
+            height: 100vh
+
+            &.padding-bottom
+                padding-bottom: $spacing-unit*2
 
             p
                 font-size: $big-font-size
 
             .align-left-center
                 margin-left: $spacing-unit*3
+
+        .slide
+            &:not(:first-child)
+                background-color: $background-color
+
+        .redes
+            svg
+                width: $spacing-unit*2
+                height: $spacing-unit*2
+                path
+                    fill: $grey-color
 
         @extend %next-section
         @extend %prev-section
