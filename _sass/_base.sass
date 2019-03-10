@@ -21,6 +21,9 @@ body
   font-feature-settings: "kern" 1
   font-kerning: normal
   box-sizing: border-box
+  +media-query($on-laptop)
+    font: $base-font-weight #{$medium-font-size}/#{$base-line-height} $base-font-family
+
   *
     box-sizing: inherit
 
@@ -76,12 +79,10 @@ h1, h2, h3, h4, h5, h6
 @for $i from 1 through 6
   h#{$i}
     font-size: $base-font-size * 1 + $base-font-size / $i
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000  
+    color: $brand-color
     +media-query($on-palm)
       font-size: $base-font-size * 0.8 + $base-font-size / $i
-h1
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
-  // text-shadow: 0px 4px 10px rgba(150, 150, 150, 1)
-  color: $brand-color
 
 %transition
   -webkit-backface-visibility: hidden
