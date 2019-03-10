@@ -1,10 +1,27 @@
 <section id="slider-topo-banner" class="section-banner slider" data-options="">
+    <style>
+        ::placeholder {
+            color: black;
+            opacity: 1
+        }
+        input {
+            width: 15em;
+        }
+        textarea, input {
+            background-color: #858585; 
+            color: black; 
+            border: black; 
+            margin-bottom: .5em; 
+            border-radius: 9px
+        }
+    </style>
     <div class="slide sobre1">
         <section class="wrapper" data-grid="spacing justify center" style="height: 90vH">
+
             <div data-cell="1of2 end" data-text="right">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Mensagem">
+                <input type="text" placeholder="Nome" style="width: 15em; background-color: #858585; color: black; border: black; margin-bottom: .5em; border-radius: 9px">
+                <input type="email" placeholder="e-mail" style="width: 15em; background-color: #858585; color: black; border: black; margin-bottom: .5em; ; border-radius: 9px">
+                <textarea name="" id="" cols="30" rows="2" placeholder="Mensagem" style="background-color: #858585; color: black; border: black; margin-bottom: .5em; ; border-radius: 9px"></textarea>
             </div>  
             <div data-cell="1of2" data-text="right">
                 <h1 data-text="center">{{ section.title }}</h1>
@@ -16,7 +33,7 @@
             </div>
         </section>
     </div>
-    <a class="prev-section scroll" data-text="center" href="{{site.baseurl}}/#home">
+    <a class="prev-section scroll" data-text="center" href="{{site.baseurl}}/#home" style="color: black">
         {% include svg/arrow-down.svg %}
         <br>
         home
