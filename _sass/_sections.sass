@@ -167,13 +167,56 @@
 
     &sobre
         height: 100vh
-        background-image: url('../img/layout/bg-sobre.png')
-        background-position: left top 155px
-        background-size: auto 40%
-        background-repeat: no-repeat
+        
         // padding-top: 56px
         padding-bottom: $spacing-unit*2
         position: relative
+        font-size: 1.1em
+
+        .sobre1
+            background-image: url('../img/layout/bg-sobre1.png')
+            background-position: left top 155px
+            background-size: auto 40%
+            background-repeat: no-repeat
+        .sobre2
+            h2 
+                font-size: 2.7em
+
+            padding-top: 8em
+            background-image: url('../img/layout/bg-sobre2.png')
+            background-position: center top 0px
+            background-size: auto 90%
+            background-repeat: no-repeat
+        .sobre3
+            h2 
+                font-size: 2.7em
+
+            padding-bottom: 3em
+            background-image: url('../img/layout/bg-sobre3.png')
+            background-position: center top 80px
+            background-size: auto 65%
+            background-repeat: no-repeat
+        .sobre4
+            h2 
+                font-size: 2.7em
+                margin-bottom: 1.3em
+            
+            padding-bottom: 4em
+            background-image: url('../img/layout/bg-sobre4.png')
+            background-position: center top 50px
+            background-size: auto 75%
+            background-repeat: no-repeat
+
+        .sobre5
+                h2
+                    margin-left: 2em
+                    margin-bottom: 2em
+
+            padding-bottom: 3em
+            background-image: url('../img/layout/bg-sobre5.png')
+            background-position: left top 20px
+            background-size: auto 85%
+            background-repeat: no-repeat
 
         .wrapper
             height: calc(100vh - 60px)
@@ -183,6 +226,8 @@
 
             .align-left-center
                 margin-left: $spacing-unit*3
+            .align-center
+                align-content: center
 
         @extend %next-section
         @extend %prev-section
@@ -232,4 +277,8 @@
                     fill: $grey-color
 
         @extend %next-section
+        @extend %prev-section
+
+    &contato
+        background-color: #353535
         @extend %prev-section

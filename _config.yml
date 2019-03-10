@@ -10,6 +10,8 @@ collections:
     output: true
   servicos:
     output: false
+  sobre:
+    output: false
 defaults:
 - scope:
     path: ''
@@ -22,7 +24,7 @@ defaults:
   values:
     layout: post
 description: Estamos cuidando de tudo para que o lançamento seja um sucesso.
-baseurl: /synertech
+baseurl: ''
 url: https://raullesteves.github.io
 markdown: kramdown
 permalink: pretty/
