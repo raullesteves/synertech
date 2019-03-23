@@ -1,8 +1,8 @@
 <section id="slider-topo-banner" class="section-banner slider" data-options="">
     <div class="slide sobre1">
         <section class="wrapper" data-grid="spacing justify center">
-            <div data-cell="1of2" data-text="right">
-                <h1 data-text="center">{{ section.title }}</h1>
+            <div data-cell="1of3" data-text="left" data-grid="end center">
+                <h1 data-cell="shrink">{{ section.title }}</h1>
             </div>
             <div data-cell="2of2 end" data-text="left" class="align-left-center">
                 <p>
@@ -23,8 +23,8 @@
     </div>
     {% assign sobre = site.sobre | sort: 'order' %}
     {% for item in sobre %}
-        <div class="slide">
-            <section class="wrapper small {{item.class}}" data-grid="spacing justify center">
+        <div class="slide {{item.class}}">
+            <section class="wrapper small" data-grid="spacing justify center">
                 <div data-cell="{{item.position-cell}}">
                     <h2 data-text="{{item.position-title}}">{{item.title}}</h2>
                     <div data-text="{{item.position-text}}">

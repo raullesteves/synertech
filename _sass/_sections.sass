@@ -166,66 +166,210 @@
                 display: none
 
     &sobre
-        height: 100vh
-        
+        height: 100vh        
         // padding-top: 56px
         padding-bottom: $spacing-unit*2
         position: relative
         font-size: 1.1em
+        
+        h1
+            text-shadow: 1px 1px 2px rgba(255,255,255,1)
+            background-color: $grey-color-dark
+            color: transparent      
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            background-clip: text
+            position: relative       
 
         .sobre1
             background-image: url('../img/layout/bg-sobre1.png')
-            background-position: left top 155px
-            background-size: auto 40%
+            background-position: left top 100px
+            background-size: auto 70%
             background-repeat: no-repeat
+
+            h1
+                margin-right: $spacing-unit*3
+                margin-top: $spacing-unit*4
+
+                &:before
+                    content: ''
+                    width: 150%
+                    height: $spacing-unit/2
+                    background-color: #000000
+                    bottom: -$spacing-unit/2
+                    left: -90%
+                    position: absolute
+
+            +media-query($medium-content-width)
+                background-size: auto 60%
+                h1
+                    margin-right: $spacing-unit
+
+            +media-query($small-content-width)
+                background-size: auto 50%                
+                background-position: left -60px top 180px
+                h1
+                    margin-right: $spacing-unit
+
+            +media-query($on-laptop)
+                background-size: auto 50%
+                background-position: left top 60px
+                h1
+                    margin-right: $spacing-unit
+
+            +media-query($on-palm)
+                background-size: 90%
+                background-position: left top 0px
+                h1
+                    margin-right: $spacing-unit
+                    margin-top: 0
+
         .sobre2
-            h2 
-                font-size: 2.7em
-
-            padding-top: 8em
             background-image: url('../img/layout/bg-sobre2.png')
-            background-position: center top 0px
-            background-size: auto 90%
+            background-position: center top $spacing-unit*3
+            background-size: auto 60%
             background-repeat: no-repeat
-        .sobre3
-            h2 
-                font-size: 2.7em
 
+            h2 
+                color: #ffffff
+                text-shadow: 3px 3px 4px rgba(150, 150, 150, 1)
+                position: relative
+
+                &:before
+                    content: ''
+                    width: 20%
+                    height: $spacing-unit/2
+                    background-color: #000000
+                    bottom: -$spacing-unit/2
+                    right: 0
+                    position: absolute
+            p
+                margin-top: $spacing-unit*3
+
+            +media-query($on-laptop)
+                background-size: auto 40%
+                h2
+                    margin-top: $spacing-unit*3
+
+        .sobre3
             padding-bottom: 3em
             background-image: url('../img/layout/bg-sobre3.png')
             background-position: center top 80px
-            background-size: auto 65%
+            background-size: auto 80%
             background-repeat: no-repeat
-        .sobre4
             h2 
-                font-size: 2.7em
-                margin-bottom: 1.3em
-            
+                background-color: #e20613
+                display: inline-block
+                padding: 0 $spacing-unit/3
+                margin-top: $spacing-unit*5
+                position: relative
+                +media-greater($on-palm)
+                    margin-top: $spacing-unit*8
+                    margin-left: $spacing-unit*4
+
+                &:before
+                    content: ''
+                    width: 40%
+                    height: $spacing-unit/2
+                    background-color: #000000
+                    top: -$spacing-unit/5
+                    left: 0
+                    position: absolute
+
+                span
+                    text-shadow: 1px 1px 2px rgba(255,255,255,1)
+                    background-color: $grey-color-dark
+                    color: transparent
+                    -webkit-background-clip: text
+                    -moz-background-clip: text
+                    background-clip: text
+
+            h3
+                color: #000000
+                text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6)
+
+            p
+                color: $grey-color-light
+
+            .wrapper
+                p
+                    font-size: 1em
+
+        .sobre4
             padding-bottom: 4em
             background-image: url('../img/layout/bg-sobre4.png')
             background-position: center top 50px
             background-size: auto 75%
             background-repeat: no-repeat
 
-        .sobre5
-                h2
-                    margin-left: 2em
-                    margin-bottom: 2em
+            h2 
+                color: #000000
+                text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6)
+                margin-top: $spacing-unit*5
+                +media-greater($on-palm)
+                    margin-top: $spacing-unit*8
 
-            padding-bottom: 3em
+            +media-query($on-palm)
+                background-size: auto 50%
+
+        .sobre5
             background-image: url('../img/layout/bg-sobre5.png')
-            background-position: left top 20px
+            background-position: center left
             background-size: auto 85%
             background-repeat: no-repeat
+
+            h2
+                margin-left: 2em
+                margin-bottom: 2em
+                background-color: #008CCF
+                padding: $spacing-unit/2
+                position: relative
+                -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75)
+                -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.75)
+                box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.75)
+                +media-query($on-palm)
+                    font-size: 1em
+                    margin-top: $spacing-unit*2
+
+                &:before
+                    content: ''
+                    width: 40%
+                    height: $spacing-unit/2
+                    background-color: #000000
+                    top: -$spacing-unit/5
+                    left: 0
+                    position: absolute 
+
+                span
+                    text-shadow: 1px 1px 2px rgba(255,255,255,1)
+                    background-color: $grey-color-dark
+                    color: transparent
+                    -webkit-background-clip: text
+                    -moz-background-clip: text
+                    background-clip: text
+
+                    b
+                        color: #000000
+
+            +media-query($medium-content-width)
+                background-size: auto 50%
+
+            +media-query($on-laptop)
+                background-size: auto 40%
+
+            +media-query($on-palm)
+                background-position: center bottom
 
         .wrapper
             height: calc(100vh - 60px)
 
             p
-                font-size: $big-font-size
+                +media-greater($on-laptop)
+                    font-size: $big-font-size
 
             .align-left-center
-                margin-left: $spacing-unit*3
+                +media-greater($on-laptop)
+                    margin-left: $spacing-unit*3
             .align-center
                 align-content: center
 

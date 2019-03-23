@@ -1,10 +1,10 @@
 ---
 order: 4
 class: padding-bottom sobre5
-position-cell: end
+position-cell:
 position-title: right
-title: O que você quiser, <br> mesmo que ainda <br> não saiba bem o que
-position-text: center
+title: <span>O que você quiser, <br> <b>mesmo que ainda</b> <br> não saiba bem o que</span>
+position-text: right
 ---
 
-Há sempre problemas para se superar,<br>nós oferecemos soluções.<br>Por isso, a Synertech cria o que você quiser,<br>sob medida das suas necessidades.
+Há sempre problemas para se superar,<br> nós oferecemos soluções. Por isso,<br>a Synertech cria o que você quiser<br>sob a medida das suas necessidades.
