@@ -1,8 +1,8 @@
 ---
 order: 2
-class: 
-position-cell: center
-position-title: center
+class: servicos3
+position-cell: end
+position-title: left
 title: Design
 position-text: center
 ---

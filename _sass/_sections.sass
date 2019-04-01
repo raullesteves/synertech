@@ -377,20 +377,96 @@
         @extend %prev-section
 
     &servicos
-        height: 100vh
-        background-image: url('../img/layout/bg-servicos.png')
-        background-position: left top 155px
-        background-size: auto 40%
-        background-repeat: no-repeat
+        height: 100vh        
         // padding-top: 56px
         padding-bottom: $spacing-unit*2
         position: relative
+        font-size: 1.1em
+
         +media-query($on-laptop)
             background-size: 60%
             background-position: left top 60px     
 
             h2
                 font-size: 1.62em
+
+        .servicos1
+            background-image: url('../img/layout/bg-servicos1.png')
+            height: 100vh
+            background-position: left -60px top 155px
+            background-size: auto 120%
+            background-repeat: no-repeat
+            // padding-top: 56px
+            padding-bottom: $spacing-unit*2
+            position: relative
+            
+            
+
+        .servicos2
+            background-image: url('../img/layout/bg-servicos2.png')
+            height: 100vh
+            background-position: left -110px top -150px
+            background-size: auto 120%
+            background-repeat: no-repeat
+            // padding-top: 56px
+            padding-bottom: $spacing-unit*2
+            position: relative
+            h2
+                color: black
+                margin-bottom: 1.2em
+        
+        .servicos3
+            background-image: url('../img/layout/bg-servicos3.png')
+            height: 100vh
+            background-position: left 50px top -150px
+            background-size: auto 100%
+            background-repeat: no-repeat
+            // padding-top: 56px
+            padding-bottom: $spacing-unit*2
+            position: relative
+            p
+                margin-bottom: 5em
+            h2
+                margin-bottom: 1em
+                margin-left: 3em
+
+        .servicos4
+            background-image: url('../img/layout/bg-servicos4.png')
+            height: 100vh
+            background-position: left 50px top -190px
+            background-size: auto 120%
+            background-repeat: no-repeat
+            // padding-top: 56px
+            padding-bottom: $spacing-unit*2
+            position: relative
+            p
+                margin-bottom: 4em
+            h2
+                margin-bottom: 1.5em
+                margin-left: 2em
+                color: black
+
+        .servicos5
+            background-image: url('../img/layout/bg-servicos5.png')
+            height: 100vh
+            background-position: right 85px top -150px
+            background-size: auto 92%
+            background-repeat: no-repeat
+            // padding-top: 56px
+            padding-bottom: $spacing-unit*2
+            position: relative
+            p
+                margin-top: 5em
+
+        .servicos6
+            background-image: url('../img/layout/bg-servicos6.png')
+            height: 100vh
+            background-position: center
+            background-size: auto 100%
+            background-repeat: no-repeat
+            // padding-top: 56px
+            padding-bottom: $spacing-unit*2
+            position: relative
 
         .wrapper
             height: 100vh
@@ -424,5 +500,14 @@
         @extend %prev-section
 
     &contato
-        background-color: #353535
+        height: 100vh
+        background-color: black
+        background-image: url('../img/layout/bg-contato.png')
+        background-position: right 4em 
+        background-size: auto 120%
+        background-repeat: no-repeat
+        +media-query($on-palm)
+            //algo a fazer aqui hein
+            
+
         @extend %prev-section

@@ -1,9 +1,9 @@
 ---
 order: 4
-class: 
+class: servicos5
 position-cell: center
 position-title: center
-title: DIAGNÓSTICOS & CERTIFICAÇÕES
+title: DIAGNÓSTICOS <br>& CERTIFICAÇÕES
 position-text: center
 ---
 
