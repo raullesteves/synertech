@@ -1,10 +1,10 @@
 ---
 order: 1
-class: padding-bottom
+class: padding-bottom servicos2
 position-cell: end
-position-title: left
+position-title: right
 title: Desenvolvimento de produtos
 position-text: center
 ---
 
-Novas demandas sempre aparecem no mercado e inovação é a palavra chave para garimpar as oportunidades bem aproveitadas. Realizamos o projeto completo de novos produtos até o protótipo, testes e certificações.
+Novas demandas sempre aparecem no mercado e inovação é<br>a palavra chave para garimpar as oportunidades bem<br>aproveitadas. Realizamos o projeto completo de novos<br>produtos até o protótipo, testes e certificações.

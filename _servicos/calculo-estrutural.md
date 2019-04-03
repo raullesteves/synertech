@@ -1,8 +1,8 @@
 ---
 order: 3
-class: padding-bottom
-position-cell: left
-position-title: center
+class: padding-bottom servicos4
+position-cell: end
+position-title: left
 title: Cálculo <br> Estrutural
 position-text: center
 ---
