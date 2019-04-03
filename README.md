@@ -3,9 +3,9 @@ title: Check out all features
 nav-title: About
 ---
 
-## johnyplate
+## synertech
 
-My preety awesome Github Pages boilerplate ;)
+Empresa de tecnologia
 
 ## Jekyll and HTML5
 

@@ -1,7 +1,7 @@
 {
   "name": "synertech",
   "version": "1.0.0",
-  "description": "My preety awesome Jekyll-Babel-Boilerplate ;)",
+  "description": "Empresa da tecnologia.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp"
