@@ -399,8 +399,16 @@
             // padding-top: 56px
             padding-bottom: $spacing-unit*2
             position: relative
-            
-            
+
+            +media-query($small-content-width)
+                background-size: auto 100%
+
+            +media-query($on-laptop)
+                background-position: left center
+                background-size: auto 85%
+
+                p
+                    padding: 0 $spacing-unit
 
         .servicos2
             background-image: url('../img/layout/bg-servicos2.png')
@@ -414,6 +422,14 @@
             h2
                 color: black
                 margin-bottom: 1.2em
+
+            +media-query($on-laptop)
+                background-position: left top
+                h2
+                    font-size: 1.5em
+
+                p
+                    padding: 0 $spacing-unit
         
         .servicos3
             background-image: url('../img/layout/bg-servicos3.png')
@@ -429,6 +445,10 @@
             h2
                 margin-bottom: 1em
                 margin-left: 3em
+
+            +media-query($on-laptop)
+                p
+                    padding: 0 $spacing-unit
 
         .servicos4
             background-image: url('../img/layout/bg-servicos4.png')
@@ -446,6 +466,10 @@
                 margin-left: 2em
                 color: black
 
+            +media-query($on-laptop)
+                p
+                    padding: 0 $spacing-unit
+
         .servicos5
             background-image: url('../img/layout/bg-servicos5.png')
             height: 100vh
@@ -458,6 +482,11 @@
             p
                 margin-top: 5em
 
+            +media-query($on-laptop)
+                p
+                    padding: 0 $spacing-unit
+                    margin-top: 0
+
         .servicos6
             background-image: url('../img/layout/bg-servicos6.png')
             height: 100vh
@@ -468,6 +497,11 @@
             padding-bottom: $spacing-unit*2
             position: relative
 
+            +media-query($on-laptop)
+                p
+                    padding: 0 $spacing-unit
+                    margin-top: 0
+                    
         .wrapper
             height: 100vh
 
