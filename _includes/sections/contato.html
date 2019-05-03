@@ -1,21 +1,5 @@
 <section id="slider-topo-banner" class="section-banner slider" data-options="">
     <style>
-        ::placeholder {
-            color: black;
-            opacity: 1;
-            font-weight: bolder
-        }
-
-        input {
-            width: 15em;
-        }
-
-        textarea,
-        input {
-            color: black;
-            border: black;
-        }
-
         @media only screen and (max-width: 600px) {
             .formInside {
                 width: 10em
@@ -23,26 +7,26 @@
         }
     </style>
     <div class="slide sobre1" style="display: flex; align-items: center; justify-content: center;">
-        <section style="position: relative; bottom: -10%">
+        <section style="position: relative; bottom: -10%" class="wrapper">
             <h1 style="color: white; text-align: right; margin-right: 1em">{{section.title}}
             </h1>
-            icone icone icone
-            <div style="color: white">(11) 9.3456-0987<br>
-                (xx) 4526-9087<br>
-                Av. dos Belos Exemplos, 365<br></div>
-            <form action="" style="margin-top: -5em">
-                <p style="text-align: right; margin-right: 1em;">
-                <input type="text" placeholder="NOME"
-                    style="width: 8em; margin-right: 6.5em; background-color: #FFDA1B; border-color: #FFDA1B"><br>
-                <input type="email" placeholder="EMAIL"
-                    style="width: 8em; margin-right: 6.5em; margin-top: 1em; background-color: #FFDA1B; border-color: #FFDA1B"><br>
-                </p>
+            <form action="">
+                <section data-grid="justify spacing">
+                    <div style="color: white">
+                        (11) 9.3456-0987<br>
+                        (xx) 4526-9087<br>
+                        Av. dos Belos Exemplos, 365<br>
+                    </div>
+                    <p class="container-inputs">
+                        <input type="text" placeholder="NOME" /><br>
+                        <input type="email" placeholder="EMAIL" /><br>
+                    </p>
+                </section>
                 <textarea name="" id="" cols="80" rows="8" placeholder="MENSAGEM" style="margin-bottom: 3em"></textarea>
             </form>
-
         </section>
     </div>
-    <a class="prev-section scroll" data-text="center" href="{{site.baseurl}}/#home" style="color: black">
+    <a class="prev-section scroll" data-text="center" href="{{site.baseurl}}/#home">
         {% include svg/arrow-down.svg %}
         <br>
         home

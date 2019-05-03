@@ -217,6 +217,9 @@
                 h1
                     margin-right: $spacing-unit
 
+                p
+                    padding: 0 $spacing-unit
+
             +media-query($on-palm)
                 background-size: 90%
                 background-position: left top 0px
@@ -250,6 +253,9 @@
                 background-size: auto 40%
                 h2
                     margin-top: $spacing-unit*3
+
+                p
+                    padding: 0 $spacing-unit
 
         .sobre3
             padding-bottom: 3em
@@ -309,6 +315,10 @@
                 +media-greater($on-palm)
                     margin-top: $spacing-unit*8
 
+            +media-query($on-laptop)
+                p
+                    padding: $spacing-unit $spacing-unit 0 $spacing-unit
+
             +media-query($on-palm)
                 background-size: auto 50%
 
@@ -356,6 +366,9 @@
 
             +media-query($on-laptop)
                 background-size: auto 40%
+
+                p
+                    padding: 0 $spacing-unit
 
             +media-query($on-palm)
                 background-position: center bottom
@@ -447,8 +460,11 @@
                 margin-left: 3em
 
             +media-query($on-laptop)
+                background-position: left top -150px
+                h2
+                    padding-top: $spacing-unit
                 p
-                    padding: 0 $spacing-unit
+                    padding: $spacing-unit*2 $spacing-unit 0 $spacing-unit
 
         .servicos4
             background-image: url('../img/layout/bg-servicos4.png')
@@ -467,8 +483,9 @@
                 color: black
 
             +media-query($on-laptop)
+                background-position: left 50px top -210px
                 p
-                    padding: 0 $spacing-unit
+                    padding: $spacing-unit $spacing-unit 0 $spacing-unit
 
         .servicos5
             background-image: url('../img/layout/bg-servicos5.png')
@@ -483,6 +500,7 @@
                 margin-top: 5em
 
             +media-query($on-laptop)
+                background-position: left top -150px
                 p
                     padding: 0 $spacing-unit
                     margin-top: 0
@@ -542,6 +560,38 @@
         background-repeat: no-repeat
         +media-query($on-palm)
             //algo a fazer aqui hein
+            background-position: left top
+            textarea
+                height: 100px
             
+        ::placeholder
+            color: black
+            opacity: 1
+            font-weight: bolder
+
+        .container-inputs
+            text-align: right
+            margin-right: 1em
+
+        input
+            width: 15em
+            width: 8em
+            background-color: #FFDA1B
+            border-color: #FFDA1B
+            margin-bottom: 1em
+
+            +media-greater($on-palm)
+                margin-right: 6.5em
+
+        textarea,
+        input
+            color: black
+            border: black
 
         @extend %prev-section
+
+        .prev-section
+            color: $grey-color
+
+            svg>path
+                fill: $grey-color
