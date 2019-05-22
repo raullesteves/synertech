@@ -163,4 +163,3 @@ window.modal = function modal(modal) {
     fechar: function() {modal.classList.remove('target');}
   };
 };
-

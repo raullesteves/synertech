@@ -12,6 +12,8 @@ collections:
     output: false
   sobre:
     output: false
+  equipe:
+    output: false
 defaults:
 - scope:
     path: ''

@@ -145,7 +145,7 @@
             height: calc(100vh - 60px)
 
             +media-query($on-laptop)
-                padding-top: $spacing-unit*4
+                padding-top: $spacing-unit*6
 
             h1
                 margin: 0 0
@@ -164,6 +164,165 @@
         .menu-home
             +media-query($on-laptop)
                 display: none
+
+    &equipe
+        height: 100vh        
+        // padding-top: 56px
+        padding-bottom: $spacing-unit*2
+        position: relative
+        font-size: 1.1em
+
+        +media-query($on-palm)
+
+        
+        .lauro
+            display: none
+
+        .lauro1
+            display: block
+    
+            p
+                +media-query($on-palm)
+                    font-size: 16px
+                    padding: 0 30px
+                    max-height: 45vh
+                    margin-top: 10vh
+                    overflow: auto
+
+        .list
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+            font-size: 30px
+            +media-query($on-palm)
+                display: inline
+                font-size: 25px
+
+        .navigationDots
+            display: inline
+            position: absolute
+            width: 100%
+            top: 60px
+            left: 0
+            text-align: center
+
+            +media-query($on-palm)
+                position: absolute
+                bottom: 0
+                left: 0
+                z-index: 999
+                top: unset
+
+            li
+                display: inline
+
+
+
+        .carrosselList
+            left: $spacing-unit/2
+            top: 15%
+            position: absolute
+            z-index: 999
+            +media-query($on-palm)
+                top: 40px
+                left: 0
+                right: 0
+                text-align: center
+            
+
+
+        h1
+            text-shadow: 1px 1px 2px rgba(255,255,255,1)
+            background-color: $grey-color-dark
+            color: transparent      
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            background-clip: text
+            position: relative       
+
+        .equipe1
+            background-image: url('../img/layout/equipe/lauro-portifolio1.png')
+            background-position: left top 100px
+            background-size: auto 70%
+            background-repeat: no-repeat
+
+            +media-query($on-palm)
+                background-position: right 15px top 60px
+                background-size: auto 30%
+
+            h1
+                margin-right: $spacing-unit*3
+                margin-top: $spacing-unit*4
+
+                &:before
+                    content: ''
+                    width: 150%
+                    height: $spacing-unit/2
+                    background-color: #000000
+                    bottom: -$spacing-unit/2
+                    left: -90%
+                    position: absolute
+
+        .equipe2
+            background-image: url('../img/layout/equipe/ortiz-historia.png')
+            background-position: left 60% top -20px
+            background-size: auto 100%
+            background-repeat: no-repeat
+
+            h2 
+                color: #ffffff
+                text-shadow: 3px 3px 4px rgba(150, 150, 150, 1)
+                position: relative
+
+            p
+                margin-top: $spacing-unit*3
+
+            +media-query($on-laptop)
+                background-size: auto 40%
+                h2
+                    margin-top: $spacing-unit*3
+       
+        
+        .equipe3
+            background-image: url('../img/layout/equipe/ortiz-historia.png')
+            background-position: center top $spacing-unit*3
+            background-size: auto 70%
+            background-repeat: no-repeat
+
+            h2 
+                color: #ffffff
+                text-shadow: 3px 3px 4px rgba(150, 150, 150, 1)
+                position: relative
+
+                &:before
+                    content: ''
+                    width: 20%
+                    height: $spacing-unit/2
+                    background-color: #000000
+                    bottom: -$spacing-unit/2
+                    right: 0
+                    position: absolute
+            p
+                margin-top: $spacing-unit*3
+
+            +media-query($on-laptop)
+                background-size: auto 40%
+                h2
+                    margin-top: $spacing-unit*3
+
+        .wrapper
+            height: calc(100vh - 60px)
+
+            p
+                +media-greater($on-laptop)
+                    font-size: $big-font-size
+
+            .align-left-center
+                +media-greater($on-laptop)
+                    margin-left: $spacing-unit*3
+            .align-center
+                align-content: center
+
+        @extend %next-section
+        @extend %prev-section
 
     &sobre
         height: 100vh        
