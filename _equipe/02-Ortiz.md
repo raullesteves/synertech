@@ -17,9 +17,9 @@ texto4: Projetos com foco em competição exigem um desempenho<br> além do padr
 texto5: Durante toda a sua vida profissional trabalhou no<br> desenvolvimento de inúmeros componentes veículares.<br> Dentro
             desse grande leque, o componente em que se tornou<br> referência foi o projeto de rodas onde atuou por mais de
             20<br> anos em importantes fabricantes como Fumagali, FPS do<br> Brasil e Scorro rodas esportivas.
-teste6: O veículo nacional Stark da TAC Motors contou com a <br>participação atuante de Wellington Ortiz no projeto
+texto6: O veículo nacional Stark da TAC Motors contou com a <br>participação atuante de Wellington Ortiz no projeto
             (CAD) e<br> certificação estrutural (CAE) do Chassi e dos principais<br> componentes de suspensão e trasmissão.
-teste7: Engenheiro mecânico automobilístico com 42 anos de vivência no <br>desenvolvimento de produtos no campo da
+texto7: Engenheiro mecânico automobilístico com 42 anos de vivência no <br>desenvolvimento de produtos no campo da
             mobilidade, Wellington Ortinz<br> tem no seu histórico de clientes - General Motors, Ford, VW Caminhões e<br>
             Automóveis Fiat, Mercendez-Benz, Renault, Mitsubishi, Suzuki<br> e Caoa-Chery.
             Pioneiro no uso da Teoria dos Elementos Finitos (FESA/ CAE) na indústria<br> automobilística nacional (Ford/
@@ -27,7 +27,7 @@ teste7: Engenheiro mecânico automobilístico com 42 anos de vivência no <br>de
             Participou do desenvolvimento de veículos elétricos em iniciativas<br> provadas no Brasil e na Alemanha.<br>
             Em Rockingham (ENG), recebeu no prêmio "Engineering Greenpower<br> International Award" pela coordenação do
             melhor projeto de 2017 em<br> veículo elétrico competitivo.
-teste8: Telefone (34)9.8405-1234<br>
+texto8: Telefone (34)9.8405-1234<br>
             E-mail w.ortiz@ortizconsult.com.br<br>
             Skype wellington.ortiz57<br>
             zap, linkedin, email<br>
