@@ -13,17 +13,21 @@
             <form action="">
                 <section data-grid="justify spacing">
                     <div style="color: white">
-                        (11) 9.3456-0987<br>
-                        (xx) 4526-9087<br>
-                        Av. dos Belos Exemplos, 365<br>
+                            W. Ortiz: (34) 98405-1234<br>
+                            R. Okazaki: (11) 99715-8184<br>
+                            L. Neto: (11) 92000-5456<br>
+                            A. Hayashi: (11) 96930-8611<br>
+                            M. Mattos: (11) 98359-7777<br>
+                            C. Moraes: (11) 99917-2834<br>
                     </div>
                     <p class="container-inputs">
-                        <input type="text" placeholder="NOME" /><br>
-                        <input type="email" placeholder="EMAIL" /><br>
+                        <input type="text" placeholder="NOME" class="inputName"/><br>
+                        <input type="email" placeholder="EMAIL" class="inputEmail"/><br>
                     </p>
                 </section>
-                <textarea name="" id="" cols="80" rows="8" placeholder="MENSAGEM" style="margin-bottom: 3em"></textarea>
+                <textarea name="" id="" cols="80" rows="8" placeholder="MENSAGEM" style="margin-bottom: 3em" class="inputMessage"></textarea>
             </form>
+            <button class="buttonSubmit">Enviar</button>
         </section>
     </div>
     <a class="prev-section scroll" data-text="center" href="{{site.baseurl}}/#home">
@@ -32,3 +36,28 @@
         home
     </a>
 </section>
+
+<script>
+            document.querySelector('.buttonSubmit').addEventListener('click', (event) => {
+                event.preventDefault;
+                console.log(document.querySelector('.inputName').value);
+                var emailVal = document.querySelector('.inputEmail').value;
+                console.log(document.querySelector('.inputMessage').value);
+                console.log('opa');
+
+                if (!validateEmail(emailVal)) {
+                    window.alert('E-mail inválido');
+                    document.querySelector('.inputEmail').value = '';
+                } else {
+                    var request = new XMLHttpRequest();
+                    request.open('POST', '/my/url', true);
+                    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+                    request.send(data);
+                }
+            });
+
+            function validateEmail(email) {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+</script>

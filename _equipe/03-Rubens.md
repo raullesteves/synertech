@@ -8,4 +8,7 @@ texto4: Responsável pela elétrica e eletrônica do modelo<br> TR4, da Mitsubis
 texto5: Sócio do escritório de desenvolvimento de produtos para as<br> principais marcas de automóveis e fornecedores, no Brasil<br> e Ásia (Ford, Fiat, Volvo, Marelli, Sangyong, Tyco, e etc)<br>Posteriormente, o escritório foi vendido para a Fiat Brasil. 
 texto6: Formado pela FEI em Engenharia Mecânica<br> Automobilística e Engenharia de Produção, mais tarde<br> voltaria a mesma universidade como Coordenador do<br> curso de Engenharia Mecânica Automobilística.<br> Criador da<br> Expo Mec. Auto, apresentação dos trabalhos de formatura<br> dos alunos aos empresários e profissionais da área, talvez<br> a primeira incubadora de Start Ups do ramo.<br> As competências em desenvolvimento de produtos,<br> protótipos, estruturas e Engenharia Experimental criaram<br> uma ampla gama de atuação que garantem projetos<br> confiáveis, com visão de produção e pós vendas<br> (Serviços).
 texto7: Telefone (34)9.8405-1234<br>E-mail w.ortiz@ortizconsult.com.br<br>Skype wellington.ortiz57<br>zap, linkedin, email<br>
+telefone: (34)9.8405-1234
+email: w.ortiz@ortizconsult.com.br
+linkedin:
 ---

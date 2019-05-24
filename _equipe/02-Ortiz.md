@@ -31,4 +31,7 @@ texto8: Telefone (34)9.8405-1234<br>
             E-mail w.ortiz@ortizconsult.com.br<br>
             Skype wellington.ortiz57<br>
             zap, linkedin, email<br>
+telefone: (34)9.8405-1234
+email: w.ortiz@ortizconsult.com.br
+linkedin:
 ---

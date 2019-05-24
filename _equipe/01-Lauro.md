@@ -6,4 +6,7 @@ texto2: Criação do conceito da cegonha Nova Era TRANSLOR<br>em 1992, atual AUT
 texto3: Inventor dentro de todos<br>os parâmetros do Instituto Nacional<br>da Propriedade Intelectual da Bicicleta<br>Conceito de Performance e competição.<br>Apresentada ao público no Salão do<br>Automóvel de 1992 e matéria no Jornal do<br>Carro como "a superbike de 100km/h".
 texto4: Lauro entende como o Design<br>vai além da estética e,<br>por essa razão, adota<br>a validação de seus projetos<br>através de protótipos e maquetes,<br>como em projetos realizados<br>para o F3 - CLR e Embraer e a<br>própria bicicleta de 100km/h.
 texto5: Lauro de Almeida Neto<br>Telefone (11)9.2000-5456<br>E-mail lauro1961@gmail.com<br>Skype lauro.brics<br>zap, linkedin e email<br>
+telefone: (11)9.2000-5456
+email: lauro1961@gmail.com
+linkedin:
 ---

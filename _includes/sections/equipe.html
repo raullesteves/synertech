@@ -7,11 +7,16 @@
                 <li onclick="carrossel('{{item.nome}}', 3)">3</li>
                 <li onclick="carrossel('{{item.nome}}', 4)">4</li>
                 <li onclick="carrossel('{{item.nome}}', 5)">5</li>
-                <li onclick="carrossel('{{item.nome}}', 6)">6</li>
-                <li onclick="carrossel('{{item.nome}}', 7)">7</li>
-                <li onclick="carrossel('{{item.nome}}', 8)">8</li>
+                {% if (item.nome == 'ortiz' or item.nome == 'rubens' %}
+                    <li onclick="carrossel('{{item.nome}}', 6)">6</li>
+                    <li onclick="carrossel('{{item.nome}}', 7)">7</li>
+                {% endif %}
+                {% if item.nome == 'ortiz' %}
+                    <li onclick="carrossel('{{item.nome}}', 8)">8</li>
+                {% endif %}
             </ul>
             <script>
+                
                 function carrossel(pessoa, num) {
                     for (i = 1; i <= 8; i++) {
                         document.querySelector(`.${pessoa}${i}`).style.display = "none";
@@ -108,10 +113,10 @@
         <a class="prev-section scroll" data-text="center" href="{{site.baseurl}}/#servicos">
             {% include svg/arrow-down.svg %}
             <br>
-            home
-        </a>
-        <a class="next-section scroll" data-text="center" href="{{site.baseurl}}/#noticias">
             serviços
+        </a>
+        <a class="next-section scroll" data-text="center" href="{{site.baseurl}}/#contato">
+            contato
             <br>
             {% include svg/arrow-down.svg %}
         </a>
