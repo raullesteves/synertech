@@ -1,6 +1,7 @@
 <section id="slider-equipe" class="section-banner slider" data-options="">
     {% for item in site.equipe %}
-        <div class="slide equipe1">
+
+        <div class="slide equipe1" style="background-image: url({{item.background}})">
             <ul class="navigationDots seamless">
                 <li onclick="carrossel('{{item.nome}}', 1)">1</li>
                 <li onclick="carrossel('{{item.nome}}', 2)">2</li>

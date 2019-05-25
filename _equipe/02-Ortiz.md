@@ -1,6 +1,7 @@
 ---
 title: alo alo
 nome: ortiz
+background: img/layout/equipe/ortiz1.png
 texto1: Pioneiro no uso da Teoria de Elementos Finitos (FESA/CAE)<br>na
             Indústria automobilística nacional (Ford/1981), foi sócio<br> fundador da primeira empresa brasileira
             especializada na<br> consultoria em análises estruturais através do uso de <br>Elementos Finitos chamada ENGEWARE
@@ -27,11 +28,10 @@ texto7: Engenheiro mecânico automobilístico com 42 anos de vivência no <br>de
             Participou do desenvolvimento de veículos elétricos em iniciativas<br> provadas no Brasil e na Alemanha.<br>
             Em Rockingham (ENG), recebeu no prêmio "Engineering Greenpower<br> International Award" pela coordenação do
             melhor projeto de 2017 em<br> veículo elétrico competitivo.
-texto8: Telefone (34)9.8405-1234<br>
-            E-mail w.ortiz@ortizconsult.com.br<br>
-            Skype wellington.ortiz57<br>
-            zap, linkedin, email<br>
-telefone: (34)9.8405-1234
-email: w.ortiz@ortizconsult.com.br
-linkedin:
+texto8: <span class="contatoNome">Wellington Ortiz</span><br>Telefone&#58 (34)98405-1234<br>
+            E-mail&#58 w.ortiz@ortizconsult.com.br<br>
+            Skype&#58 wellington.ortiz57<br>
+            <img src="/img/icones/whatsapp.png" width="40px">
+            <img src="/img/icones/linkedin.png" width="40px"> 
+            <img src="/img/icones/email2.png" width="40px">
 ---

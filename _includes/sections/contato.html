@@ -10,7 +10,7 @@
         <section style="position: relative; bottom: -10%" class="wrapper">
             <h1 style="color: white; text-align: right; margin-right: 1em">{{section.title}}
             </h1>
-            <form action="">
+            <form action="https://formspree.io/raullesteves@gmail.com" method="POST" />
                 <section data-grid="justify spacing">
                     <div style="color: white">
                             W. Ortiz: (34) 98405-1234<br>
@@ -21,13 +21,13 @@
                             C. Moraes: (11) 99917-2834<br>
                     </div>
                     <p class="container-inputs">
-                        <input type="text" placeholder="NOME" class="inputName"/><br>
-                        <input type="email" placeholder="EMAIL" class="inputEmail"/><br>
+                        <input type="text" placeholder="NOME" class="inputName" name="nome"/><br>
+                        <input type="email" placeholder="EMAIL" class="inputEmail" name="email"/><br>
                     </p>
                 </section>
-                <textarea name="" id="" cols="80" rows="8" placeholder="MENSAGEM" style="margin-bottom: 3em" class="inputMessage"></textarea>
+                <textarea name="mensagem" id="" cols="80" rows="8" placeholder="MENSAGEM" style="margin-bottom: 3em" class="inputMessage"></textarea>
+                <button type="submit" class="buttonSubmit">Enviar</button>
             </form>
-            <button class="buttonSubmit">Enviar</button>
         </section>
     </div>
     <a class="prev-section scroll" data-text="center" href="{{site.baseurl}}/#home">
@@ -36,28 +36,3 @@
         home
     </a>
 </section>
-
-<script>
-            document.querySelector('.buttonSubmit').addEventListener('click', (event) => {
-                event.preventDefault;
-                console.log(document.querySelector('.inputName').value);
-                var emailVal = document.querySelector('.inputEmail').value;
-                console.log(document.querySelector('.inputMessage').value);
-                console.log('opa');
-
-                if (!validateEmail(emailVal)) {
-                    window.alert('E-mail inválido');
-                    document.querySelector('.inputEmail').value = '';
-                } else {
-                    var request = new XMLHttpRequest();
-                    request.open('POST', '/my/url', true);
-                    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-                    request.send(data);
-                }
-            });
-
-            function validateEmail(email) {
-                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                return re.test(String(email).toLowerCase());
-            }
-</script>
