@@ -31,7 +31,7 @@ texto7: Engenheiro mecânico automobilístico com 42 anos de vivência no <br>de
 texto8: <span class="contatoNome">Wellington Ortiz</span><br>Telefone&#58 (34)98405-1234<br>
             E-mail&#58 w.ortiz@ortizconsult.com.br<br>
             Skype&#58 wellington.ortiz57<br>
-            <img src="/img/icones/whatsapp.png" width="40px">
-            <img src="/img/icones/linkedin.png" width="40px"> 
-            <img src="/img/icones/email2.png" width="40px">
+            <img src="img/icones/whatsapp.png" width="40px">
+            <img src="img/icones/linkedin.png" width="40px"> 
+            <img src="img/icones/email2.png" width="40px">
 ---
