@@ -186,6 +186,8 @@
             position: relative
             bottom: 50px
             +media-query($on-palm)
+                max-height: 16em
+                overflow: scroll
                 position: relative
                 top: 120px
                 font-size: 14.5px
@@ -196,7 +198,7 @@
             +media-query($on-palm)
                 font-size: .8em
                 position: relative
-                top: 100px
+                top: 150px
 
         .lauro3
             position: relative
@@ -204,7 +206,7 @@
             +media-query($on-palm)
                 font-size: .8em
                 position: relative
-                top: 100px
+                top: 150px
 
         .lauro4
             position: relative
@@ -212,14 +214,15 @@
             +media-query($on-palm)
                 font-size: .9em
                 position: relative
-                top: 3em
+                top: 150px
         
         .lauro5
             position: relative
             bottom: 200px
             +media-query($on-palm)
                 position: relative
-                top: 100px
+                top: 150px
+                text-align: center
 
         .ortiz1
             display: block
@@ -273,14 +276,17 @@
             bottom: 200px
             font-size: 20px
             +media-query($on-palm)
+                max-height: 16em
+                overflow: scroll
                 font-size: 15px
                 position: relative
-                top: 100px
+                top: -20px
 
         .ortiz8
             position: relative
             bottom: 200px
             +media-query($on-palm)
+                text-align: center
                 position: relative
                 top: 4em
 
@@ -315,7 +321,7 @@
             +media-query($on-palm)
                 font-size: .8em
                 position: relative
-                top: 100px
+                top: 110px
 
         .rubens5
             position: relative
@@ -329,14 +335,17 @@
             position: relative
             bottom: 100px
             +media-query($on-palm)
+                max-height: 16em
+                overflow: scroll
                 font-size: 14.5px
                 position: relative
-                top: 100px
+                top: -20px
 
         .rubens7
             position: relative
             bottom: 200px
             +media-query($on-palm)
+                text-align: center
                 position: relative
                 top: 4em
 
@@ -568,8 +577,8 @@
         .sobre3
             padding-bottom: 3em
             background-image: url('../img/layout/bg-sobre3.png')
-            background-position: center top 80px
-            background-size: auto 80%
+            background-position: center top -72px
+            background-size: auto 120%
             background-repeat: no-repeat
             h2 
                 background-color: #e20613
@@ -713,7 +722,6 @@
 
         .servicos1
             background-image: url('../img/layout/bg-servicos1.png')
-            height: 100vh
             background-position: left -60px top 155px
             background-size: auto 120%
             background-repeat: no-repeat
@@ -733,7 +741,6 @@
 
         .servicos2
             background-image: url('../img/layout/bg-servicos2.png')
-            height: 100vh
             background-position: left -110px top -150px
             background-size: auto 120%
             background-repeat: no-repeat
@@ -754,7 +761,6 @@
         
         .servicos3
             background-image: url('../img/layout/bg-servicos3.png')
-            height: 100vh
             background-position: left 50px top -150px
             background-size: auto 100%
             background-repeat: no-repeat
@@ -773,10 +779,11 @@
                     padding-top: $spacing-unit
                 p
                     padding: $spacing-unit*2 $spacing-unit 0 $spacing-unit
+                    position: relative
+                    top: 80px
 
         .servicos4
             background-image: url('../img/layout/bg-servicos4.png')
-            height: 100vh
             background-position: left 50px top -190px
             background-size: auto 120%
             background-repeat: no-repeat
@@ -794,10 +801,11 @@
                 background-position: left 50px top -210px
                 p
                     padding: $spacing-unit $spacing-unit 0 $spacing-unit
+                    position: relative
+                    top: 80px
 
         .servicos5
             background-image: url('../img/layout/bg-servicos5.png')
-            height: 100vh
             background-position: right 85px top -150px
             background-size: auto 92%
             background-repeat: no-repeat
@@ -811,13 +819,12 @@
                 background-position: left top -150px
                 p
                     position: relative
-                    top: 1em
+                    top: 80px
                     padding: 0 $spacing-unit
                     margin-top: 0
 
         .servicos6
             background-image: url('../img/layout/bg-servicos6.png')
-            height: 100vh
             background-position: center
             background-size: auto 100%
             background-repeat: no-repeat
