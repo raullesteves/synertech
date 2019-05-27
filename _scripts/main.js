@@ -36,16 +36,21 @@ function setup() {
       })      
   }));
 
-  const menuBars = document.querySelector('.site-nav')  
+  const menuBars = document.querySelector('.site-nav')
+  const header = document.querySelector('.site-header')
+  console.log(header);
+  
   const winH = window.innerHeight
   const logoBig = document.querySelector('[data-logo-big]')
   const logo = document.querySelector('[data-logo]')
   window.onscroll = ()=>{
     if(document.body.scrollTop >= winH || document.documentElement.scrollTop >= winH){
       menuBars.removeAttribute('hidden')
+      header.classList.add('position-unset')
     }
     else{
       menuBars.setAttribute('hidden', true)
+      header.classList.remove('position-unset')
     }
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
       _toggle(logo, logoBig)

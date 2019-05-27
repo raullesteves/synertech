@@ -1,7 +1,7 @@
 .site-header
     min-height: 56px
     position: fixed
-    z-index: 999
+    z-index: 9
     width: 100%
     padding: $spacing-unit/2 0px
     +media-query($on-laptop)
@@ -14,6 +14,15 @@
     +media-query($on-palm)
         [data-logo]
             max-width: 80%
+
+[data-logo]
+    position: fixed
+    z-index: 9999
+    top: $spacing-unit/2
+    left: $spacing-unit
+
+// .position-unset
+//     position: unset !important            
 
 .site-title
     float: left

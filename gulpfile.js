@@ -43,9 +43,9 @@ gulp.task('bundle', function () {
             format: 'iife'
         }))
         .on('error', console.log)
-        .pipe(babel({
-            "presets": ["es2015", "minify"]
-        }))
+        // .pipe(babel({
+        //     "presets": ["es2015", "minify"]
+        // }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./js'));
 });

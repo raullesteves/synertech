@@ -24,8 +24,8 @@
         </div>
         {% assign servicos = site.servicos | sort: 'order' %}
         {% for item in servicos %}
-            <div class="slide">
-                <section class="wrapper small {{item.class}}" data-grid="spacing justify center">
+            <div class="slide {{item.class}}">
+                <section class="wrapper small" data-grid="spacing justify center">
                     <div data-cell="{{item.position-cell}}">
                         <h2 data-text="{{item.position-title}}">{{item.title}}</h2>
                         <div data-text="{{item.position-text}}">
