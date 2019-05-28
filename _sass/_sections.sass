@@ -165,6 +165,10 @@
             +media-query($on-laptop)
                 display: none
 
+        .height-text
+            +media-greater($on-laptop)
+                min-height: 350px
+
     &equipe
         height: 100vh        
         // padding-top: 56px
@@ -546,9 +550,12 @@
 
         .sobre2
             background-image: url('../img/layout/bg-sobre2.png')
-            background-position: center top $spacing-unit*3
+            background-position: center
             background-size: auto 60%
             background-repeat: no-repeat
+
+            .wrapper
+                height: 100vh
 
             h2 
                 color: #ffffff
@@ -564,7 +571,7 @@
                     right: 0
                     position: absolute
             p
-                margin-top: $spacing-unit*3
+                margin-top: $spacing-unit*4
 
             +media-query($on-laptop)
                 background-size: auto 40%
@@ -700,6 +707,7 @@
             .align-left-center
                 +media-greater($on-laptop)
                     margin-left: $spacing-unit*3
+                    margin-bottom: $spacing-unit*3
             .align-center
                 align-content: center
 
@@ -739,6 +747,10 @@
                 p
                     padding: 0 $spacing-unit
 
+            .align-left-center
+                +media-greater($on-laptop)
+                    margin-top: $spacing-unit*6
+
         .servicos2
             background-image: url('../img/layout/bg-servicos2.png')
             background-position: center bottom 2em
@@ -755,7 +767,7 @@
                 bottom: 2.1em
             p
                 position: relative
-                bottom: 3em
+                bottom: 5em
 
             +media-query($on-laptop)
                 background-position: left top

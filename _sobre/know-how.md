@@ -1,7 +1,7 @@
 ---
 order: 1
 class: sobre2
-position-cell: 
+position-cell: center
 position-title: right
 title: Know <br> How
 position-text: center

@@ -5,7 +5,7 @@
         <img src="{{ site.baseurl }}/img/layout/logo-home.png" data-logo-big alt="{{ site.title }}">
       </a>
       <div data-cell="1of2 end"  data-text="right" data-grid="column end" class="social-media">
-        <a href="" target="_blank" class="icon-sm">
+        <!-- <a href="" target="_blank" class="icon-sm">
           {% include svg/whatsapp.svg %}
         </a>
         <a href="" target="_blank" class="icon-sm">
@@ -16,37 +16,37 @@
         </a>
         <a href="" target="_blank" class="icon-sm">
           {% include svg/linkedin.svg %}
-        </a>
+        </a> -->
       </div>
     </section>
-    <nav class="site-nav" hidden>
-      <a href="#" title="Menu" class="menu-icon"><span></span><span></span><span></span></a>
-      <div class="trigger">
-        {% for item in site.data.menu %}
-          {% if item.title %}
-          <a class="page-link scroll" href="{{site.baseurl}}/#{{item.url}}">{{ item.title }}</a>
-          {% endif %}
-        {% endfor %}
-        <div data-grid="row small-spacing">
-            <a href="" target="_blank" class="icon-sm">
-                {% include svg/whatsapp.svg %}
-              </a>
-              <a href="" target="_blank" class="icon-sm">
-                {% include svg/mail.svg %}
-              </a>
-              <a href="" target="_blank" class="icon-sm">
-                {% include svg/facebook.svg %}
-              </a>
-              <a href="" target="_blank" class="icon-sm">
-                {% include svg/linkedin.svg %}
-              </a>          
-        </div>
-      </div>
-    </nav>
-
+    
   </div>
-
+  
 </header>
+  <nav class="site-nav" hidden>
+    <a href="#" title="Menu" class="menu-icon"><span></span><span></span><span></span></a>
+    <div class="trigger">
+      {% for item in site.data.menu %}
+        {% if item.title %}
+        <a class="page-link scroll" href="{{site.baseurl}}/#{{item.url}}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+      <div data-grid="row small-spacing">
+          <!-- <a href="" target="_blank" class="icon-sm">
+            {% include svg/whatsapp.svg %}
+          </a>
+          <a href="" target="_blank" class="icon-sm">
+            {% include svg/mail.svg %}
+          </a>
+          <a href="" target="_blank" class="icon-sm">
+            {% include svg/facebook.svg %}
+          </a>
+          <a href="" target="_blank" class="icon-sm">
+            {% include svg/linkedin.svg %}
+          </a> -->
+      </div>
+    </div>
+  </nav>
 <a href="{{ site.baseurl }}/#home" data-logo hidden class="scroll">
   <img src="{{ site.baseurl }}/img/layout/logo.png" width="300" alt="{{ site.title }}">
 </a>

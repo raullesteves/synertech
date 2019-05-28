@@ -38,7 +38,6 @@ function setup() {
 
   const menuBars = document.querySelector('.site-nav')
   const header = document.querySelector('.site-header')
-  console.log(header);
   
   const winH = window.innerHeight
   const logoBig = document.querySelector('[data-logo-big]')
